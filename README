@@ -1,0 +1,11 @@
+Being able to control Google Voice from the command line allows for
+unique ways of interacting with telephony services.  Although there
+are existing utilities for doing so (i.e. pygooglevoice), they have
+significant dependencies.
+
+Originally intended to be deployed on an OpenWRT router running
+Asterisk, googlevoice.sh allows dialing Google Voice from the command
+line, and depends only on wget, sed, and mktemp.
+
+Usage:
+googlevoice.sh login password call_number forwarding_number
